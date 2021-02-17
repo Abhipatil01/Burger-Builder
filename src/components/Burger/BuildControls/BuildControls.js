@@ -25,6 +25,13 @@ const buildControls = (props) => {
           maxLimitDisabled={props.maxLimitDisabled[ctr.type]}
         />
       ))}
+      <button
+        className={classes.OrderButton}
+        disabled={props.purchasable}
+        onClick={props.clicked}
+      >
+        ORDER NOW
+      </button>
     </div>
   );
 };
